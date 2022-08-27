@@ -12,7 +12,7 @@
         <archive>
             <manifest>
                 <addClasspath>true</addClasspath>
-                <mainClass>no.haakon.springdemo.SpringDemoApplication</mainClass>
+                <mainClass>no/haakon/springdemo/SpringDemoApplication.kt</mainClass>
             </manifest>
         </archive>
         <descriptorRefs>
