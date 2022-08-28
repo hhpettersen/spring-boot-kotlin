@@ -44,6 +44,10 @@ tasks.withType(Jar::class) {
 	}
 }
 
+springBoot {
+	mainClass.set("no.haakon.springdemo.SpringDemoApplicationKt")
+}
+
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
