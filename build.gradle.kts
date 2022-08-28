@@ -40,7 +40,7 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType(Jar::class) {
 	manifest {
-		attributes["Main-Class"] = "no.haakon.springdemo.SpringDemoApplication"
+		attributes["Main-Class"] = "no.haakon.springdemo.SpringDemoApplicationKt"
 	}
 }
 
