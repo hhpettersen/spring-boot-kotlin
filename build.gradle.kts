@@ -38,12 +38,6 @@ tasks.withType<KotlinCompile> {
 	}
 }
 
-//tasks.withType(Jar::class) {
-//	manifest {
-//		attributes["Main-Class"] = "no.haakon.springdemo.SpringDemoApplicationKt"
-//	}
-//}
-
 springBoot {
 	mainClass.set("no.haakon.springdemo.SpringDemoApplicationKt")
 }
