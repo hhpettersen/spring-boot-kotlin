@@ -6,6 +6,7 @@ plugins {
 	kotlin("jvm") version "1.6.21"
 	kotlin("plugin.spring") version "1.6.21"
 	kotlin("plugin.jpa") version "1.6.21"
+	java
 }
 
 group = "no.haakon"
@@ -34,6 +35,12 @@ tasks.withType<KotlinCompile> {
 	kotlinOptions {
 		freeCompilerArgs = listOf("-Xjsr305=strict")
 		jvmTarget = "16"
+	}
+}
+
+tasks.withType(Jar::class) {
+	manifest {
+		attributes["Main-Class"] = "no.haakon.springdemo.SpringDemoApplication"
 	}
 }
 
